@@ -1,5 +1,4 @@
-﻿using System;
-using NUnit.Framework;
+﻿using NUnit.Framework;
 
 namespace NUnit.HomeWork.RunOnlyOnce.Bli
 {
@@ -7,25 +6,25 @@ namespace NUnit.HomeWork.RunOnlyOnce.Bli
 	public class SomeTestFixtureBli
 	{
 		[Test]
-		public void OneTest ()
+		public void BliOneTest ()
 		{
-			Assert.That (Global.IsMoreThanFirstTime,Is.True);
+            Assert.That(Global.IsFirstTime, Is.False);
 		}
 		[Test]
-		public void SecondTest ()
+        public void BliSecondTest()
 		{
-			Assert.That (Global.IsMoreThanFirstTime,Is.True);
-		}
+            Assert.That(Global.IsFirstTime, Is.False);
+        }
 		[Test]
-		public void ThirdTest ()
+        public void BliThirdTest()
 		{
-			Assert.That (Global.IsMoreThanFirstTime,Is.True);
-		}
+            Assert.That(Global.IsFirstTime, Is.False);
+        }
 		[Test]
-		public void ForthTest ()
+        public void BliForthTest()
 		{
-			Assert.That (Global.IsMoreThanFirstTime,Is.True);
-		}
+            Assert.That(Global.IsFirstTime, Is.False);
+        }
 	}
 }
 

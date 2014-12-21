@@ -1,11 +1,11 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{3ED14067-7A64-4E07-A843-2CD2BE6ACB53}</ProjectGuid>
     <OutputType>Library</OutputType>
-    <RootNamespace>NUnit.HomeWork</RootNamespace>
+    <RootNamespace>NUnit.HomeWork.RunOnlyOnce</RootNamespace>
     <AssemblyName>NUnit.HomeWork.RunOnlyOnce</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <TargetFrameworkProfile>Client</TargetFrameworkProfile>
@@ -44,11 +44,7 @@
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Bla\" />
-    <Folder Include="Ble\" />
-    <Folder Include="Bli\" />
-  </ItemGroup>
+  <ItemGroup />
   <ProjectExtensions>
     <MonoDevelop>
       <Properties>

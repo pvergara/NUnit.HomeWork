@@ -1,5 +1,5 @@
-﻿using System;
-using NUnit.Framework;
+﻿using NUnit.Framework;
+using NUnit.HomeWork.RunOnlyOnce;
 
 namespace NUnit.HomeWork.Bla
 {

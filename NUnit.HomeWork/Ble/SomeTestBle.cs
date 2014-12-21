@@ -1,5 +1,4 @@
-﻿using System;
-using NUnit.Framework;
+﻿using NUnit.Framework;
 
 namespace NUnit.HomeWork.RunOnlyOnce.Ble
 {
@@ -7,22 +6,22 @@ namespace NUnit.HomeWork.RunOnlyOnce.Ble
 	public class SomeTestFixtureBle
 	{
 		[Test]
-		public void OneTest ()
+		public void BleOneTest ()
 		{
 			Assert.That (Global.IsMoreThanFirstTime,Is.True);
 		}
 		[Test]
-		public void SecondTest ()
+        public void BleSecondTest()
 		{
 			Assert.That (Global.IsMoreThanFirstTime,Is.True);
 		}
 		[Test]
-		public void ThirdTest ()
+        public void BleThirdTest()
 		{
 			Assert.That (Global.IsMoreThanFirstTime,Is.True);
 		}
 		[Test]
-		public void ForthTest ()
+        public void BleForthTest()
 		{
 			Assert.That (Global.IsMoreThanFirstTime,Is.True);
 		}

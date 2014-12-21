@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace NUnit.HomeWork.RunOnlyOnce
+﻿namespace NUnit.HomeWork.RunOnlyOnce
 {
 	public static class Global
 	{
@@ -12,6 +10,17 @@ namespace NUnit.HomeWork.RunOnlyOnce
 				return aux ;
 			} 
 		}
+
+        private static bool _isFirstTime = true;
+        public static bool IsFirstTime
+        {
+            get
+            {
+                var aux = _isFirstTime;
+                _isFirstTime = false;
+                return aux;
+            }
+        }
 	}
 }
 
